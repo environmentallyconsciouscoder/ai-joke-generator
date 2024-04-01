@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Joke Generator
 
-## Getting Started
+This project is a web application built using Next.js that generates jokes using artificial intelligence. The application allows users to customize various parameters for the jokes they want to generate and provides an evaluation feature to judge the appropriateness and humor of the generated jokes.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Customizable Joke Parameters**: Users can customize parameters such as topic, tone, kind of joke, and temperature to generate jokes tailored to their preferences.
+- **AI Joke Generation**: Utilizing AI, the application generates jokes based on the user-defined parameters.
+- **Evaluation Feature**: The AI evaluates the generated jokes for factors such as humor, appropriateness, and offensiveness.
+- **Local Environment Deployment**: The application can be run locally, allowing users to deploy it on their local machines.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To use the application:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone this repository.
+2. Install dependencies by running `npm install`.
+3. Start the development server with `npm run dev`.
+4. Visit `http://localhost:3000` in your web browser to access the application.
+5. Customize the joke parameters as desired and generate jokes by clicking the button.
+6. View the generated jokes along with their evaluations.
 
-## Learn More
+## Parameters
 
-To learn more about Next.js, take a look at the following resources:
+The following parameters can be customized:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Topic**: Choose from a list of options such as work, people, animals, food, television, etc.
+- **Tone**: Select the tone of the joke, such as witty, sarcastic, silly, dark, goofy, etc.
+- **Kind of Joke**: Specify the kind of joke, including pun, knock-knock, story, etc.
+- **Temperature**: Adjust the randomness/fun level of the joke.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributors
 
-## Deploy on Vercel
+This project is maintained by the following contributors:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Contributor 1](https://github.com/environmentallyconsciouscoder)
+- [Contributor 2](https://github.com/BTree101)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
