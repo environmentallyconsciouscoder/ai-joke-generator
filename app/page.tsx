@@ -191,12 +191,6 @@ export default function Chat() {
             Generate Story
           </button>
 
-          <div>
-            <button
-              disabled={isLoading || ( !state.tone || !state.topic || !state.kindOfJoke || !temperature || !content)}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" onClick={() => getFeedback(content)}>Get Feedback on joke</button>
-          </div>
-
           <div
             hidden={
               messages.length === 0 ||
@@ -205,6 +199,12 @@ export default function Chat() {
             className="bg-opacity-25 bg-gray-700 rounded-lg p-4"
           >
             {messages[messages.length - 1]?.content}
+          </div>
+
+          <div>
+            <button
+              disabled={isLoading || ( !state.tone || !state.topic || !state.kindOfJoke || !temperature || !content)}
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" onClick={() => getFeedback(content)}>Get Feedback on joke</button>
           </div>
 
           <div
